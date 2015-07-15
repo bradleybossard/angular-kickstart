@@ -9,10 +9,9 @@
     var scope;
 
     beforeEach(module('app'));
-    beforeEach(inject(function($rootScope, $controller) {
-      rootScope = $rootScope;
-      scope = $rootScope.$new();
-      ctrl = $controller('HomeCtrl as home', {
+    beforeEach(inject(function(_$rootScope_, _$controller_) {
+      scope = _$rootScope_.$new();
+      ctrl = _$controller_('HomeCtrl as home', {
         $scope: scope,
         data: {
           data: fakeData
