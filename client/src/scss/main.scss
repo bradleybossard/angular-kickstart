@@ -5,3 +5,30 @@ https://github.com/kachunchau/smacss-boilerplate
 https://github.com/davidrapson/scss-toolkit
 */
 @import 'settings', 'mixins', 'base', 'helpers', 'modules/island','modules/horizontal-list', 'modules/buttons', 'layouts/page', 'states';
+
+.favicon {
+  display: inline-block;
+  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.twitter {
+  background-image: url('https://twitter.com/favicon.ico');
+}
+
+.github {
+  background-image: url('https://github.com/favicon.ico');
+}
+
+.google {
+  background-image: url('https://ssl.gstatic.com/s2/oz/images/faviconr3.ico');
+}
+
+.linkedin {
+  background-image: url('https://www.linkedin.com/favicon.ico');
+}
+
+.stackoverflow {
+  background-image: url('http://cdn.sstatic.net/stackoverflow/img/favicon.ico');
+}

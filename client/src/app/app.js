@@ -5,16 +5,20 @@
     angular.bootstrap(document, ['app']);
   });
 
-  function config($stateProvider, $urlRouterProvider, $logProvider, $httpProvider) {
+  function config($stateProvider,
+                  $urlRouterProvider,
+                  $logProvider,
+                  $httpProvider) {
     $urlRouterProvider.otherwise('/');
     $logProvider.debugEnabled(true);
     $httpProvider.interceptors.push('httpInterceptor');
     $stateProvider
       .state('root', {
+        url: '/',
         views: {
           'header': {
             templateUrl: 'src/common/header.tpl.html',
-            controller: 'HeaderCtrl'
+            controller: 'NavbarCtrl'
           },
           'footer': {
             templateUrl: 'src/common/footer.tpl.html',
@@ -34,8 +38,8 @@
 
   angular.module('app', [
       'ui.router',
-      'home',
-      'common.header',
+      //'common.header',
+      'common.navbar',
       'common.footer',
       'common.services.data',
       'common.directives.version',
