@@ -1,0 +1,4 @@
+--ignore-dir=build/dist
+--ignore-dir=versions
+--ignore-dir=client/test/unit-results
+--ignore-dir=client/src/vendor

@@ -35,7 +35,6 @@
   angular.module('app', [
       'ui.router',
       'home',
-      'getting-started',
       'common.header',
       'common.footer',
       'common.services.data',
